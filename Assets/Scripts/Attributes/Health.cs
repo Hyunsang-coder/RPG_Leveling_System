@@ -10,10 +10,12 @@ namespace RPG.Attributes
         [SerializeField] float healthPoints = 100f;
 
         bool isDead = false;
+        HealthDisplay display;
 
         void Start()
         {
             healthPoints = GetComponent<BaseStats>().GetHealth();
+            display = FindObjectOfType<HealthDisplay>();
         }
         public bool IsDead()
         {
@@ -23,10 +25,16 @@ namespace RPG.Attributes
         public void TakeDamage(float damage)
         {
             healthPoints = Mathf.Max(healthPoints - damage, 0);
+
             if(healthPoints == 0)
             {
                 Die();
             }
+        }
+
+        public float GetPercentage()
+        {
+            return healthPoints/GetComponent<BaseStats>().GetHealth() * 100;
         }
 
         private void Die()
