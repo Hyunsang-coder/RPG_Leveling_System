@@ -24,3 +24,6 @@ MonoBehaviour:
   - chaClass: 1
     health:
     - 30
+  - chaClass: 3
+    health:
+    - 20
