@@ -6,7 +6,7 @@ namespace RPG.Stats
 
     public class Progression : ScriptableObject
     {
-        // 캐릭터 컴포넌트
+        // 캐릭터 스탯 SO
         [SerializeField] ProgressionCharacterClass[] characterClasses = null;
 
         public float GetHealth(CharacterClass characterClass, int level)
@@ -15,7 +15,7 @@ namespace RPG.Stats
             {   
                 if (progressionClass.chaClass == characterClass)
                 {
-                    return progressionClass.health[level -1];
+                    //return progressionClass.health[level -1];
                 }
             }
             return 0;
@@ -26,7 +26,15 @@ namespace RPG.Stats
         class ProgressionCharacterClass
         {
             public CharacterClass chaClass;
-            public float[] health; 
+            public ProgressionStats[] stats;
+        }
+
+        [System.Serializable]
+        class ProgressionStats
+        {
+            public Stats stat;
+            public float[] levels;
+            
         }
     }
 }
