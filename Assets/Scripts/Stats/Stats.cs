@@ -2,10 +2,10 @@ using UnityEngine;
 
 namespace RPG.Stats
 {
-    public enum Stats
+    public enum Stat
     {
-        health,
-        experience
+        Health,
+        Experience
     }
 
 }
