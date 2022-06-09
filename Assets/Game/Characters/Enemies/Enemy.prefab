@@ -53,6 +53,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 7101948239889367458, guid: 750e3c6876a501e42b5827ec7a3d24d1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8196697675836667564, guid: 750e3c6876a501e42b5827ec7a3d24d1,
         type: 3}
       propertyPath: m_RootOrder
@@ -108,7 +113,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7101948239889367458, guid: 750e3c6876a501e42b5827ec7a3d24d1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 750e3c6876a501e42b5827ec7a3d24d1, type: 3}
 --- !u!1 &3418213045117489655 stripped
 GameObject:

@@ -19,6 +19,8 @@ GameObject:
   - component: {fileID: 488557239800501724}
   - component: {fileID: 2495515040136399149}
   - component: {fileID: 1504635807421391987}
+  - component: {fileID: 1885610410508173089}
+  - component: {fileID: 7101948239889367458}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -151,7 +153,7 @@ MonoBehaviour:
   timeBetweenAttacks: 1
   rightHandTransform: {fileID: 0}
   leftHandTransform: {fileID: 0}
-  defaultWeapon: {fileID: 0}
+  defaultWeapon: {fileID: 11400000, guid: 2c7272ad808b5a8449f77a375a2c4119, type: 2}
 --- !u!114 &7346836368589747626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,7 +178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f681b2338b2fccc428a8e51d8f2adc5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPoints: 100
+  healthPoints: 200
 --- !u!114 &488557239800501724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,7 +191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ea9374b509b70f4bba37e4a2ca8cf00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uniqueIdentifier: 
+  uniqueIdentifier: player
 --- !u!114 &2495515040136399149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,7 +205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingLevel: 1
-  characterClass: 1
+  characterClass: 0
   progression: {fileID: 11400000, guid: 24ee2881c320b9c4894f24f96a09e627, type: 2}
 --- !u!54 &1504635807421391987
 Rigidbody:
@@ -221,3 +223,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1885610410508173089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5401972681186859721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee2af9860adb0f341a880636a8a94ca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  experiencePoints: 0
+--- !u!114 &7101948239889367458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5401972681186859721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7af77275bc4688847bc54d446c56e643, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
